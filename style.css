@@ -25,6 +25,7 @@ header{
 	}
 	header ul{
 		display: flex;
+		margin-top: 18px;
 	}
 	header li{
 		width: auto;
@@ -35,7 +36,7 @@ section{
 	padding: 40px;
 	height: 500px;
 	margin-bottom: 40px;
- 	background-color: #dddddd;
+ 	background-color: #ffffff;
 }
 	section h1{
 		margin-bottom: 12px;
