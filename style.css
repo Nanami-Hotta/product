@@ -1,52 +1,156 @@
 *{
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	text-decoration: none;
+  margin:0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
-a{
-	color:black;
-}
-
-#container{
-	margin:auto;
-	width: 100%;
-}
-
-header{
-	display: flex;
-	padding: 40px;
-	background-color: #ffffff;
-	color: black;
-}
-	header h1{
-		margin-right: auto;
-	}
-	header ul{
-		display: flex;
-		margin-top: 18px;
-	}
-	header li{
-		width: auto;
-		margin-right: 20px;
+body {
+  font-family: 'Zen Old Mincho', serif;
 	}
 
-section{
-	padding: 40px;
-	height: 500px;
-	margin-bottom: 40px;
- 	background-color: #ffffff;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: #FFFFFF;
+  color: black;
 }
-	section h1{
-		margin-bottom: 12px;
-	}
-	section p {
-		margin-bottom: 40px;
-	}
 
-footer{
-	padding: 40px;
-	background-color: #dddddd;
-	color: white;
+header h1 {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  font-size: 1.5rem;
+}
+
+#main {
+	max-width:100%;
+  height:auto;
+  margin-top: 4rem;
+}
+
+#MenuButton {
+  display: none;
+}
+
+#MenuList {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  width: auto;
+}
+
+  #MenuList ul {
+    display: flex;
+    flex-direction:row;
+    margin-top: 10px;
+  }
+
+  #MenuList li {
+    width: auto;
+    padding: 0 1em;
+    border-bottom: none;
+  }
+
+  #MenuList a {
+    color: black;
+  }
+
+@media only screen and (max-width: 768px) {
+
+  #MenuButton {
+    display: block;
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+  }
+
+    .MenuButtonLine {
+      position: relative;
+      display: block;
+      height: 2px;
+      width: 30px;
+      background: #000;
+      transition: ease .5s;
+    }
+
+    .MenuButtonLine:nth-child(1) {
+        top: 0;
+    }
+    .MenuButtonLine:nth-child(2) {
+        margin: 8px 0;
+    }
+    .MenuButtonLine:nth-child(3) {
+        top: 0;
+    }
+
+    #MenuButton.open .MenuButtonLine:nth-child(1) {
+      top: 10px;
+      transform: rotate(135deg);
+    }
+
+    #MenuButton.open .MenuButtonLine:nth-child(2) {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
+
+    #MenuButton.open .MenuButtonLine:nth-child(3) {
+      top: -10px;
+      transform: rotate(-135deg);
+    }
+
+  #MenuList {  /* Default Display None */
+    display: none;
+
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background-color: rgba(201,202,202,0.7);
+  }
+
+    #MenuList ul {
+      flex-direction: column;
+    }
+
+    #MenuList li {
+      width: 100%;
+      padding: 0;
+      border-bottom: 1px solid #3e3a39;
+    }
+
+    #MenuList a {
+      display: block;
+      width: 100%;
+      padding: 0.8rem 2rem;
+    }
+
+}
+
+#wrapper {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding: 40px;
+  height: 500px;
+  background-color: #dddddd;
+  margin-bottom: 40px;
+}
+
+section h1 {
+  margin-bottom: 1rem;
+}
+
+footer {
+  padding: 40px;
+  background-color: #333333;
+  color: white;
 }
