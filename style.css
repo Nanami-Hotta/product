@@ -162,6 +162,10 @@ header ul {
     margin-top: 3rem;
   }
 
+  #concept img{
+    width: 100%;
+  }
+
   .concept-img {
   	margin-right: calc(50% - 50vw);
   	margin-left: calc(50% - 50vw);
@@ -383,7 +387,7 @@ header ul {
   }
 
   section {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
 
   #about {
@@ -392,6 +396,17 @@ header ul {
 
   #concept {
     line-height: 200%;
+  }
+
+  #concept img{
+    width: 0;
+  }
+
+  .foot-wrap .menu-left, .menu-right {
+      display: inline-block;
+      padding: 40px;
+      margin-left: 2rem;
+      font-size: 18px;
   }
 
 }
