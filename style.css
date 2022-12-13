@@ -102,6 +102,134 @@ header ul {
     margin-left: auto;
   }
 
+  #wrapper {
+    margin-top: 8rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    padding: 50px;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    height: auto;
+      /*
+    background-color: white;
+    */
+    background-color: inherit;
+
+  }
+
+  section h1 {
+    margin-bottom: 5rem;
+    font-family: 'le-monde-livre-std', serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 2px;
+  }
+
+  #about {
+    margin-bottom: 10rem;
+    line-height: 300%;
+  }
+
+  .about-img {
+  	margin-right: calc(50% - 50vw);
+  	margin-left: calc(50% - 50vw);
+  }
+
+  .about-img img{
+    display: block;
+    width: 100%;
+    height:auto;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #concept {
+    margin-bottom: 100px;
+    line-height: 300%;
+  }
+
+  #concept h2 {
+    line-height: 200%;
+  }
+
+  #concept p {
+    margin-top: 3rem;
+  }
+
+  .concept-img {
+  	margin-right: calc(50% - 50vw);
+  	margin-left: calc(50% - 50vw);
+  }
+
+  .concept-img ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #img01 {
+    display: block;
+    padding-right: 2rem;
+  }
+
+  #img02 {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: auto;
+    margin-right: 0;
+    margin-left: auto;
+    padding-top: 10rem;
+  }
+
+  .parent_box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer {
+    padding: 40px;
+    font-family: 'le-monde-livre-std', serif;
+    background-color: white;
+    color: darkblue;
+  }
+
+  .foot-wrap .menu-left, .menu-right {
+      display: inline-block;
+      padding: 40px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-left: 8rem;
+      margin-right: 8rem;
+      vertical-align: top;
+      text-decoration: none;
+      line-height:50px;
+      font-size: 18px;
+  }
+
+  footer a:visited {
+    color: darkblue;
+  }
+
+  footer a:link {
+    color: darkblue;
+  }
+
+  footer a:hover {
+    color: chocolate;
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 10rem;
+  }
+
 
 @media only screen and (max-width: 768px) {
 
@@ -187,6 +315,12 @@ header ul {
       font-size: 15px;
     }
 
+    #wrapper {
+      margin-top: 5rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+
     p,figure {
     margin-bottom: 0;
     text-align: left;
@@ -219,138 +353,45 @@ header ul {
 
 }
 
-#wrapper {
-  margin-top: 8rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  display: flex;
-  flex-direction: column;
-}
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
 
-section {
-  padding: 50px;
-  margin-top: 20rem;
-  margin-bottom: 20rem;
-  height: auto;
-    /*
-  background-color: white;
-  */
-  background-color: inherit;
+  h1 {
+    font-weight: normal;
+    font-size: 25px;
+  }
 
-}
-
-section h1 {
-  margin-bottom: 5rem;
-  font-family: 'le-monde-livre-std', serif;
-  font-weight: 300;
-  font-style: normal;
-  letter-spacing: 2px;
-}
-
-#about {
-  margin-bottom: 10rem;
-  line-height: 300%;
-}
-
-.about-img {
-	margin-right: calc(50% - 50vw);
-	margin-left: calc(50% - 50vw);
-}
-
-.about-img img{
-  display: block;
-  width: 100%;
-  height:auto;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-#concept {
-  margin-bottom: 100px;
-  line-height: 300%;
-}
-
-#concept h2 {
-  line-height: 200%;
-}
-
-#concept p {
-  margin-top: 3rem;
-}
-
-.concept-img {
-	margin-right: calc(50% - 50vw);
-	margin-left: calc(50% - 50vw);
-}
-
-.concept-img ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-#img01 {
-  display: block;
-  padding-right: 2rem;
-}
-
-#img02 {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: auto;
-  margin-right: 0;
-  margin-left: auto;
-  padding-top: 10rem;
-}
-
-.parent_box {
-  width: auto;
-  display: flex;
-  justify-content: space-around;
-}
-
-/*
-
-.parent_box img {
-  border: 1px solid lightgray;
-}
-
-*/
-
-footer {
-  padding: 40px;
-  font-family: 'le-monde-livre-std', serif;
-  background-color: white;
-  color: darkblue;
-}
-
-.foot-wrap .menu-left, .menu-right {
-    display: inline-block;
-    padding: 40px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-left: 8rem;
-    margin-right: 8rem;
-    vertical-align: top;
-    text-decoration: none;
-    line-height:50px;
+  h2 {
+    font-weight: normal;
     font-size: 18px;
-}
+  }
 
-footer a:visited {
-  color: darkblue;
-}
+  h3 {
+    font-weight: normal;
+    font-size: 14px;
+  }
 
-footer a:link {
-  color: darkblue;
-}
+  p {
+    font-weight: normal;
+    font-size: 8px;
+  }
 
-footer a:hover {
-  color: chocolate;
-}
+  #wrapper {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 
-.copyright {
-  text-align: center;
-  margin-top: 10rem;
+  section {
+    margin-top: 10rem;
+  }
+
+  #about {
+    line-height: 200%;
+  }
+
+  #concept {
+    line-height: 200%;
+  }
+
 }
