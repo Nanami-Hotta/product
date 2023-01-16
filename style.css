@@ -32,13 +32,13 @@ header {
   left: 0;
   width: 100%;
   height: 4rem;
-  background-color: rgba(255,255,255,0);
+  background-color: rgba(245,246,250,0.5);
   font-family: 'le-monde-livre-std', serif;
-  color: chocolate;
+  color: darkblue;
 }
 
 header a:link {
-  color: chocolate;
+  color: darkblue;
 }
 
 header ul {
@@ -47,6 +47,7 @@ header ul {
 
 #top {
   position: absolute;
+  width: 100%;
   top: 1rem;
   left: 2rem;
   font-size: 1.5rem;
@@ -107,9 +108,6 @@ header ul {
     margin-top: 20rem;
     margin-bottom: 20rem;
     height: auto;
-      /*
-    background-color: white;
-    */
     background-color: inherit;
 
   }
@@ -121,6 +119,30 @@ header ul {
     font-style: normal;
     letter-spacing: 2px;
   }
+
+  /*
+
+  .head-border {
+    position: relative;
+    display: inline-block;
+    padding: 0 55px;
+  }
+
+  .head-border:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      display: inline-block;
+      width: 50px;
+      height: 2px;
+      background-color: darkblue;
+  }
+
+  .head-border:before {
+      left: 0;
+  }
+
+  */
 
   #about {
     margin-bottom: 10rem;
@@ -144,6 +166,7 @@ header ul {
   #concept {
     margin-bottom: 100px;
     line-height: 300%;
+    width: auto;
   }
 
   #concept h2 {
